@@ -1,11 +1,11 @@
 const mineflayer = require('mineflayer')
 
-const bossName = "Makkusu_Otaku"; //Your name here.... unless?
+const bossName = "LingM404"; //Your name here.... unless?
 const prefix = "Bodyguard";
 
 const server = {
-	address: "localhost",
-	version: "1.16.4",
+	address: "awegwog.aternos.me",
+	version: "1.18.32.02",
 };
 
 const botCount = 3;
@@ -21,6 +21,7 @@ function createBot() {
 	let bot = mineflayer.createBot({
 		host: server.address,
 		username: `${prefix}_${bots.length}`,
+                port: 16971,
 		version: server.version,
 		viewDistance: "tiny",
 	});
